@@ -15,7 +15,6 @@ body {
 }
 
 .container {
-    border: solid 1px red;
     display: flex;
     justify-content: flex-start;    
     gap: 100px;;
@@ -36,7 +35,6 @@ button {
 }
 
 .grid {
-    border: solid 1px blue;
     /* max-height: 500px; */
     /* max-width: 500px; */
     display: grid;

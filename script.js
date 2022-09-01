@@ -1,8 +1,10 @@
 // Initialise constants
 const DEFAULT_SIZE = 16;
+const DEFAULT_MODE = "draw";
 
 // Assign constants to updateable values
 let currentSize = DEFAULT_SIZE;
+let currentMode = DEFAULT_MODE;
 
 const grid = document.querySelector('.grid');
 
@@ -77,10 +79,10 @@ function setupGrid() {
     function createGridSquare() {
         const gridSquare = document.createElement('div');
         gridSquare.classList.add("cell");
-        gridSquare.style.cssText = "border: solid black 1px; width: 10px; height: 10px; margin: 0; padding: 0";
+        gridSquare.style.cssText = "border: solid black 1px; width: 20px; height: 20px; margin: 0; padding: 0";
         grid.appendChild(gridSquare);
-        gridSquare.style.backgroundColor = "white";
+        gridSquare.style.backgroundColor = '#ffffff';
         gridSquare.addEventListener('mouseover', () => {
-            gridSquare.style.backgroundColor = "black";
+            gridSquare.style.backgroundColor = "#000000";
         });
     }
